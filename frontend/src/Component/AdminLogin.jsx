@@ -13,7 +13,10 @@ const AdminLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/admin-login", { email, password });
+      const response = await axios.post("https://bohogurl.org/admin-login", {
+        email,
+        password,
+      });
 
       console.log(response.data); // Check if token is present in response
       const { adminId } = response.data;

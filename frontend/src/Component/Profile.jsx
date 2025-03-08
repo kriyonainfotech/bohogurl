@@ -31,10 +31,14 @@ const Profile = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3000/signup", formData, {
-        headers: { Authorization: `Bearer ${token}` },
-        "Content-Type": "application/json"
-      });      
+      const response = await axios.post(
+        "https://bohogurl.org/signup",
+        formData,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+          "Content-Type": "application/json",
+        }
+      );      
       setFormData({ name: "", email: "", phone: "", password: "", address: "", pincode: "" });
       setMessage("Signup Successful!");
     } catch (error) {

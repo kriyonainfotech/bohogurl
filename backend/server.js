@@ -35,6 +35,6 @@ sequelize.sync({ force: false })  // 'force: true' will drop the tables and recr
   .catch(err => {
     console.error("Error syncing database:", err);
   });
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+app.listen(3002, () => {
+  console.log('Server running on http://localhost:3002');
 });

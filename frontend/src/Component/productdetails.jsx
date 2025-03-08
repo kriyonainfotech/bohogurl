@@ -24,7 +24,7 @@
 //     };
 
 //     try {
-//       const response = await axios.post("http://localhost:3000/add", payload, {
+//       const response = await axios.post("https://bohogurl.org/add", payload, {
 //         headers: {
 //           Authorization: `Bearer ${token}`, // Pass token in Authorization header
 //         },
@@ -118,7 +118,7 @@
 //         quantity: 1,
 //       };
   
-//       await axios.post("http://localhost:3000/cart/add", payload, {
+//       await axios.post("https://bohogurl.org/cart/add", payload, {
 //         headers: {
 //           Authorization: `Bearer ${token}`,
 //         },
@@ -145,7 +145,7 @@
 //       {/* Left Side - Image */}
 //       <div className="product-image-section">
 //         <img
-//           src={`http://localhost:3000/${product.image_url}`}// Default image if none exists
+//           src={`/${product.image_url}`}// Default image if none exists
 //           alt={product.name || "Product"}
 //           className="product-page-image"
 //         />
